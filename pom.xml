@@ -5,7 +5,7 @@
 
     <groupId>com.alibaba.csp</groupId>
     <artifactId>sentinel-parent</artifactId>
-    <version>1.6.1-SNAPSHOT</version>
+    <version>1.7.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
@@ -41,7 +41,7 @@
 
     <properties>
         <!-- Compile libs -->
-        <fastjson.version>1.2.56</fastjson.version>
+        <fastjson.version>1.2.62</fastjson.version>
 
         <!-- Test libs -->
         <junit.version>4.12</junit.version>
@@ -122,7 +122,17 @@
             </dependency>
             <dependency>
                 <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-datasource-etcd</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
                 <artifactId>sentinel-transport-simple-http</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-transport-netty-http</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
